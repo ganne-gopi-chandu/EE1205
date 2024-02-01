@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2024.1.2)  31 JAN 2024 17:09
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2024.1.2)  1 FEB 2024 16:03
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**a_0.tex
-(./a_0.tex
+**a_1.tex
+(./a_1.tex
 LaTeX2e <2022-11-01> patch level 1
 L3 programming layer <2023-01-16>
 (/usr/share/texlive/texmf-dist/tex/latex/ieeetran/IEEEtran.cls
@@ -1125,13 +1125,13 @@ LaTeX Font Info:    Trying to load font information for OT1+txr on input line 4
 
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/ot1txr.fd
 File: ot1txr.fd 2000/12/15 v3.1
-)
-No file a_0.aux.
-\openout1 = `a_0.aux'.
+) (./a_1.aux)
+\openout1 = `a_1.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/txmi/m/it on input line 42.
 LaTeX Font Info:    Trying to load font information for OML+txmi on input line 
 42.
+
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/omltxmi.fd
 File: omltxmi.fd 2000/12/15 v3.1
 )
@@ -1243,8 +1243,10 @@ LaTeX Info: Redefining \ohm on input line 42.
 Package gensymb Info: Using \textohm for \ohm on input line 42.
 Package gensymb Info: Using \textmu for \micro on input line 42.
 Package hyperref Info: Link coloring OFF on input line 42.
+
+(./a_1.out) (./a_1.out)
 \@outlinefile=\write5
-\openout5 = `a_0.out'.
+\openout5 = `a_1.out'.
 
 LaTeX Font Info:    Calculating math sizes for size <14> on input line 49.
 LaTeX Font Info:    Trying to load font information for U+txsya on input line 4
@@ -1277,25 +1279,9 @@ LaTeX Font Info:    Trying to load font information for TS1+txr on input line 4
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/ts1txr.fd
 File: ts1txr.fd 2000/12/15 v3.1
 )
-
-LaTeX Warning: Reference `eq11.9.2.1' on page 1 undefined on input line 84.
-
-
-LaTeX Warning: Reference `eq11.9.2.2' on page 1 undefined on input line 84.
-
-
-LaTeX Warning: Reference `eq11.9.2.3' on page 1 undefined on input line 84.
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 83--85
 
  []
-
-
-LaTeX Warning: Reference `eq11.9.2.8' on page 1 undefined on input line 100.
-
-
-LaTeX Warning: Reference `eq11.9.2.9' on page 1 undefined on input line 100.
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 99--101
@@ -1311,22 +1297,9 @@ Overfull \hbox (35.01097pt too wide) detected at line 139
 Underfull \vbox (badness 1014) has occurred while \output is active []
 
 
-
-LaTeX Warning: Reference `eq11.9.2.1' on page 1 undefined on input line 141.
-
-
-LaTeX Warning: Reference `eq11.9.2.10' on page 1 undefined on input line 141.
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 139--142
 
  []
-
-
-LaTeX Warning: Reference `eq11.9.2.7' on page 1 undefined on input line 149.
-
-
-LaTeX Warning: Reference `eq11.9.2.10' on page 1 undefined on input line 149.
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 147--150
@@ -1342,7 +1315,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 154--156
 
 
 ]
-<test.png, id=42, 462.528pt x 346.896pt>
+<test.png, id=51, 462.528pt x 346.896pt>
 File: test.png Graphic file (type png)
 <use test.png>
 Package pdftex.def Info: test.png  used on input line 169.
@@ -1367,25 +1340,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 191--193
 
  []
 
-[2 <./test.png>] (./a_0.aux)
-
-LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
-
-Package rerunfilecheck Warning: File `a_0.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `a_0.out':
-(rerunfilecheck)             Before: <no file>
-(rerunfilecheck)             After:  D41D8CD98F00B204E9800998ECF8427E;0.
+[2 <./test.png>] (./a_1.aux)
+Package rerunfilecheck Info: File `a_1.out' has not changed.
+(rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 30437 strings out of 476091
- 598787 string characters out of 5794082
+ 30443 strings out of 476091
+ 598835 string characters out of 5794082
  1902330 words of memory out of 5000000
  50125 multiletter control sequences out of 15000+600000
  591498 words of font info for 205 fonts, out of 8000000 for 9000
@@ -1398,10 +1359,10 @@ t/fonts/type1/public/txfonts/rtxr.pfb></usr/share/texlive/texmf-dist/fonts/type
 onts/txsy.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb><
 /usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texl
 ive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on a_0.pdf (2 pages, 63533 bytes).
+Output written on a_1.pdf (2 pages, 62661 bytes).
 PDF statistics:
- 106 PDF objects out of 1000 (max. 8388607)
- 85 compressed objects within 1 object stream
+ 115 PDF objects out of 1000 (max. 8388607)
+ 94 compressed objects within 1 object stream
  41 named destinations out of 1000 (max. 500000)
  18 words of extra memory for PDF output out of 10000 (max. 10000000)
 
