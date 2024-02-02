@@ -57,7 +57,7 @@ the ratio of 7
 th and (m - 1)
 th numbers is 5:9. Find the value of m.\\
 \textbf{Solution}\\
-\begin{table}[h!]
+\begin{table}[!h]
 \begin{center}
 \renewcommand\thetable{1}
 \begin{tabular}{ |c|c|c| } 
@@ -66,38 +66,35 @@ th numbers is 5:9. Find the value of m.\\
   \hline
   $x(0)$ & 1 & First term of A.P  \\ 
   \hline
+  x(n) & 31 & last term \\
+  \hline
   d & 2 & Common difference \\ 
   \hline
-  m & 14 & The value of m \\
+  n & m+2 & number of terms \\
   \hline
-  x(n) & (2n-1)u(n) & General term \\
+  m & 14 & number of terms inserted \\
   \hline
 \end{tabular}
 \end{center}
 \caption{}
-\end{table}
-\begin{align}
-\text{First term } x(0) &= 1\label{eq11.9.2.1}\\
-\text{last term } x(n) &= 31\label{eq11.9.2.2}\\
-\text{number of terms}( n) &= m + 2.\label{eq11.9.2.3}
-\end{align}
-from equations \eqref{eq11.9.2.1},\eqref{eq11.9.2.2} and \ref{eq11.9.2.3}\\
+\end{table}\\
+The last term is
 \begin{align}
 x(n)&=x(0)+nd\\
 31 &= 1 + \brak{m + 1}d \\
 30 &= \brak{m + 1}d \\
-\frac{30}{m + 1} &= d \label{eq11.9.2.7}
+\frac{30}{m + 1} &= d \label{eq11.9.2.4}
 \end{align}
 Now $7$th and $\brak{m-1}$th terms
 \begin{align}
-\implies x\brak{7} &= x(0) + 7d\label{eq11.9.2.8}\\
-\implies x\brak{m-1} &= x(0) + \brak{m-1}d\label{eq11.9.2.9}
+\implies x\brak{7} &= x(0) + 7d\label{eq11.9.2.5}\\
+\implies x\brak{m-1} &= x(0) + \brak{m-1}d\label{eq11.9.2.6}
 \end{align}
 Given 
 \begin{align}
-\frac{x\brak{7}}{x\brak{m-1}} = \frac{5}{9} \label{eq11.9.2.10}
+\frac{x\brak{7}}{x\brak{m-1}} = \frac{5}{9} \label{eq11.9.2.7}
 \end{align}
-From  equations \eqref{eq11.9.2.8} and \eqref{eq11.9.2.9} the augmented matrix is:\\
+From  equations \eqref{eq11.9.2.5} and \eqref{eq11.9.2.6} the augmented matrix is:\\
 \begin{align}
  \myvec{
    1 & 7 & x\brak{7}
@@ -138,15 +135,15 @@ From  equations \eqref{eq11.9.2.8} and \eqref{eq11.9.2.9} the augmented matrix i
  }
 \end{align}
 part 1\\
-from equations \eqref{eq11.9.2.1} and \eqref{eq11.9.2.10}\\
+from equation \eqref{eq11.9.2.7}\\
 \begin{align}
-    x\brak{0}&=x\brak{7}-\brak{7\frac{x\brak{m-1}-x\brak{7}}{m-8}}\\
+    x\brak{0}&=x\brak{7}-7\brak{\frac{x\brak{m-1}-x\brak{7}}{m-8}}\\
     1&=x\brak{7}-7\brak{\frac{x\brak{m-1}-x\brak{7}}{m-8}}\\
     1&=x\brak{7}-7\brak{\frac{x\brak{7}\brak{\frac{9}{5}}-x\brak{7}}{m-8}}\\
     1&=x\brak{7}\brak{\brak{m-8}-\frac{28}{5}}
 \end{align}
 part 2\\
-from equations \eqref{eq11.9.2.7} and \eqref{eq11.9.2.10}\\
+from equations \eqref{eq11.9.2.4} and \eqref{eq11.9.2.7}\\
  \begin{align}
     d&=\frac{x\brak{m-1}-x\brak{7}}{m-8}\\
     \frac{30}{m+1}&=\frac{x\brak{7}\brak{\frac{4}{9}}}{m-8}\\
@@ -169,8 +166,8 @@ General term of AP as
     \includegraphics[width=1.0\linewidth]{test.png}
     \caption{Plot of x(n) vs n}
     \label{fig:1}
-\end{figure}
-\text{The Z-Transform Equation for x\brak{n} is}\\
+\end{figure}\\
+The Z-Transform Equation for x\brak{n} is\\
 \begin{align}
     X\brak{z}&=\sum_{n=-\infty}^{\infty}\brak{2n-1}z^{-n}u\brak{n} \\ \implies X\brak{z}&=\sum_{n=\infty}^{\infty}\brak{2n}z^{-n}u\brak{n} -\sum_{n=-\infty}^{n=\infty}z^{-n}u\brak{n}\\
    \implies X(z)&=2\sum_{n=0}^{\infty}\dfrac{n}{z^{n}}-U\brak{z}
