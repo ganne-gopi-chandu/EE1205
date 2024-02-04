@@ -10,7 +10,7 @@ int main() {
     // Write the output to the file
     int a = 1;
     int d = 2;
-    int start_n = -3;
+    int start_n = 0;
     int end_n = 8;
     int n;
     for (n = start_n; n <= end_n; ++n) {

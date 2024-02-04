@@ -20,6 +20,6 @@ def plot_ap_general_term(a, d, start, end):
 
 a = 1  
 d = 2
-start_n = -3
+start_n = 0
 end_n = 8
 plot_ap_general_term(a, d, start_n, end_n)
