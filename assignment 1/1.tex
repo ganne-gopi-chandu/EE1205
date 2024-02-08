@@ -68,7 +68,7 @@ th numbers is 5:9. Find the value of m.\\
   \hline
   x(n) & 31 & last term \\
   \hline
-  d & 2 & Common difference \\ 
+  $\frac{x\brak{7}}{x\brak{m-1}}$ & $\frac{5}{9}$ & ratio of 7 th and (m-1) th numbers\\ 
   \hline
   n & m+2 & number of terms \\
   \hline
@@ -90,76 +90,78 @@ Now $7$th and $\brak{m-1}$th terms
 \implies x\brak{7} &= x(0) + 7d\label{eq11.9.2.5}\\
 \implies x\brak{m-1} &= x(0) + \brak{m-1}d\label{eq11.9.2.6}
 \end{align}
-Given 
-\begin{align}
-\frac{x\brak{7}}{x\brak{m-1}} = \frac{5}{9} \label{eq11.9.2.7}
-\end{align}
 From  equations \eqref{eq11.9.2.5} and \eqref{eq11.9.2.6} the augmented matrix is:\\
 \begin{align}
- \myvec{
-   1 & 7 & x\brak{7}
-   \\
-   1 & m-1 & x\brak{m-1}
- }
- \xleftrightarrow[]{R_2 \leftarrow {R_2-R_1}}
- \myvec{
-   1 & 7 & x\brak{7}
-   \\
-   0 & m-8 & x\brak{m-1}-x_7
- }
- \\
- \xleftrightarrow[]{R_2 \leftarrow {\frac{1}{m-8}R_2}}
- \myvec{
-   1 & 7 & x\brak{7}
-   \\
-   0 & 1 & \frac{x\brak{m-1}-x_7}{m-8}
- }
- \\
- \xleftrightarrow[]{R_1 \leftarrow {R_1-7{R_2}}}
- \myvec{
-   1 & 0 & x_7-7\brak{\frac{x\brak{m-1}-x\brak{7}}{m-8}}
-   \\
-   0 & 1 & \frac{x\brak{m-1}-x\brak{7}}{m-8}
- }
- \\
- \implies \myvec{
-   x\brak{0}
-   \\
-   d
- }
- =
- \myvec{
-   x_7-7\brak{\frac{x\brak{m-1}-x\brak{7}}{m-8}}
-   \\
-   \frac{x\brak{m-1}-x\brak{7}}{m-8}
- }
+\left(
+\begin{array}{ccc}
+1 & 7 & x(7) \\
+1 & m-1 & x(m-1)
+\end{array}
+\right)
+&\xleftrightarrow[]{R_2 \leftarrow R_2-R_1}
+\left(
+\begin{array}{ccc}
+1 & 7 & x(7) \\
+0 & m-8 & x(m-1)-x(7)
+\end{array}
+\right)
+\\
+&\xleftrightarrow[]{R_2 \leftarrow \frac{1}{m-8}R_2}
+\left(
+\begin{array}{ccc}
+1 & 7 & x(7) \\
+0 & 1 & \frac{x(m-1)-x(7)}{m-8}
+\end{array}
+\right)
+\\
+&\xleftrightarrow[]{R_1 \leftarrow R_1-7R_2}
+\left(
+\begin{array}{ccc}
+1 & 0 & x(7)-7\left(\frac{x(m-1)-x(7)}{m-8}\right) \\
+0 & 1 & \frac{x(m-1)-x(7)}{m-8}
+\end{array}
+\right)
+\\
+\implies \left(
+\begin{array}{c}
+x(0) \\
+d
+\end{array}
+\right)
+&=
+\left(
+\begin{array}{c}
+x(7)-7\left(\frac{x(m-1)-x(7)}{m-8}\right) \\
+\frac{x(m-1)-x(7)}{m-8}
+\end{array}
+\right)
 \end{align}
 part 1\\
-from equation \eqref{eq11.9.2.7}\\
+From the table \\
 \begin{align}
     x\brak{0}&=x\brak{7}-7\brak{\frac{x\brak{m-1}-x\brak{7}}{m-8}}\\
     1&=x\brak{7}-7\brak{\frac{x\brak{m-1}-x\brak{7}}{m-8}}\\
     1&=x\brak{7}-7\brak{\frac{x\brak{7}\brak{\frac{9}{5}}-x\brak{7}}{m-8}}\\
-    1&=x\brak{7}\brak{\brak{m-8}-\frac{28}{5}} \label{eq11.9.2.15}
+    1&=x\brak{7}\brak{\brak{m-8}-\frac{28}{5}} \label{eq11.9.2.14}
 \end{align}
 part 2\\
-from equations \eqref{eq11.9.2.4} and \eqref{eq11.9.2.7}\\
+from equations \eqref{eq11.9.2.4} and from table\\
  \begin{align}
     d&=\frac{x\brak{m-1}-x\brak{7}}{m-8}\\
-    \frac{30}{m+1}&=\frac{x\brak{7}\brak{\frac{4}{9}}}{m-8}\\ \label{eq11.9.2.18}
+    \frac{30}{m+1}&=\frac{x\brak{7}\brak{\frac{4}{9}}}{m-8}\\ \label{eq11.9.2.17}
     x\brak{7}&=\frac{75\brak{m-8}}{2\brak{m+1}}
  \end{align}
-Substituting \eqref{eq11.9.2.18} in \eqref{eq11.9.2.15}\\
+Substituting \eqref{eq11.9.2.17} in \eqref{eq11.9.2.14}\\
  \begin{align}
     m-8&=\frac{75\brak{m-8}\brak{5m-68}}{10\brak{m+1}}\\
     2\brak{m+1}&=15\brak{5m-68}\\
     2m+2&=75m-1020\\
     73m&=1022\\
     m&=14
- \end{align}
-General term of AP as 
+ \end{align}\newpage
+ \text{General term of AP as} \\
 \begin{align}
-    x\brak{n}=\brak{2n-1}u(n)
+    x\brak{n}=\brak{2n+1}u(n)
 \end{align}
 \begin{figure}[!h]
     \centering
@@ -169,8 +171,8 @@ General term of AP as
 \end{figure}\\
 The Z-Transform Equation for x\brak{n} is\\
 \begin{align}
-    X\brak{z}&=\sum_{n=-\infty}^{\infty}\brak{2n-1}z^{-n}u\brak{n} \\ &=\sum_{n=\infty}^{\infty}\brak{2n}z^{-n}u\brak{n} -\sum_{n=-\infty}^{n=\infty}z^{-n}u\brak{n}\\
-    X(z)&=2\sum_{n=0}^{\infty}\dfrac{n}{z^{n}}-U\brak{z}
+    X\brak{z}&=\sum_{n=-\infty}^{\infty}\brak{2n+1}z^{-n}u\brak{n} \\ &=\sum_{n=\infty}^{\infty}\brak{2n}z^{-n}u\brak{n} +\sum_{n=-\infty}^{n=\infty}z^{-n}u\brak{n}\\
+    X(z)&=2\sum_{n=0}^{\infty}\dfrac{n}{z^{n}}+U\brak{z}
 \end{align}
 \text{The first part of summation is}\\
 \begin{align}
@@ -183,9 +185,10 @@ The Z-Transform Equation for x\brak{n} is\\
 \end{align}
 The result is,
 \begin{align}
-    X\brak{z}&=2S_\infty-U\brak{z}\\
-    &=\dfrac{2z^2}{\brak{z-1}^{2}}-\dfrac{1}{1-z^{-1}}\\
-    X\brak{z}&=\dfrac{z^2+z}{\brak{z-1}^{2}}
+    X\brak{z}&=2S_\infty+U\brak{z}\\
+    &=\dfrac{2z^2}{\brak{z-1}^{2}}+\dfrac{1}{1-z^{-1}}\\
+    X\brak{z}&=\dfrac{3z^2-z}{\brak{z-1}^{2}}
 \end{align}
 (ROC) \(|z| > 1\).\\
 \end{document}
+

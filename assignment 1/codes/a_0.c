@@ -16,9 +16,9 @@ int main() {
     for (n = start_n; n <= end_n; ++n) {
         int term_value;
         if (n >= 1)
-            term_value = a + (n - 1) * d;
+            term_value = (a + (n + 1) * d)-2;
         else
-            term_value = -1;
+            term_value = 1;
         fprintf(file, "%d %d\n",n, term_value);
     }
 
